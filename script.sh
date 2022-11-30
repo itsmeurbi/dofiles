@@ -93,6 +93,9 @@ then
   brew install --cask visual-studio-code
 fi
 
+echo "Coping VSCode config file..."
+cp config_files/vs_code_settings.json ~/Library/Application Support/Code/User/settings.json
+
 if [ ! -d "/Applications/Docker.app" ]
 then
   echo "Installing Docker..."

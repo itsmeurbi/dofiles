@@ -1,0 +1,13 @@
+{
+  "workbench.colorTheme": "GitHub Dark",
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "editor.rulers": [
+      100
+  ],
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2
+}
