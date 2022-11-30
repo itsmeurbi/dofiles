@@ -14,6 +14,9 @@ then
   source ~/.bash_profile
 fi
 
+echo "Installing Oh-My-zsh..."
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo "Updating all dependencies..."
 brew upgrade
 
