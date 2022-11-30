@@ -33,6 +33,22 @@ echo "Installing nvm..."
 if ! command -v nvm &> /dev/null
 then
   brew install nvm
+  mkdir ~/.nvm
+  echo 'export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion' >>  ~/.zshrc
+fi
+
+echo "Installing node..."
+if ! command -v node &> /dev/null
+then
+  brew install node
+fi
+
+echo "Installing yarn..."
+if ! command -v yarn &> /dev/null
+then
+  npm install --global yarn
 fi
 
 echo "Installing redis..."
